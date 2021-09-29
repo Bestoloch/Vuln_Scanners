@@ -101,7 +101,7 @@ for scan in scans:
           new_dict['Solution'] = "-"
         else:
           new_dict['Solution'] = vuln['Solution']
-        NVT_id = f"{new_dict['Company']}|{new_dict['Hostname']}|{new_dict['Port']}|{new_dict['Protocol']}|{new_dict['Synopsis']}|{new_dict['Description']}"
+        NVT_id = f"{new_dict['Hostname']}|{new_dict['Port']}|{new_dict['Protocol']}|{new_dict['Synopsis']}|{new_dict['Description']}"
         q1_hash = hashlib.sha256(NVT_id.encode('utf-8')).hexdigest()
         new_dict['ID'] = f"nessus_{q1_hash}"
         if (r_FirstSeen.exists(new_dict['ID'])):
