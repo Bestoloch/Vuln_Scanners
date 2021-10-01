@@ -6,6 +6,6 @@ It will pull all the reports from the different Vulnerability scanners to Redis 
 - [x] Nessus (v8)
 - [x] OpenVAS (GSA v20.08)
 - [x] Acunetix
-- [ ] Nikto
+- [x] Nikto
 - [ ] NMAP
 - [ ] Burp Suite
